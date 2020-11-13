@@ -1,6 +1,6 @@
 try {
     if ($(window).width() > 768) {
-        $("<link>").attr({href: "/css/live2d/waifu.css", rel: "stylesheet", type: "text/css"}).appendTo('head');
+        $("<link>").attr({href: "https://cdn.jsdelivr.net/gh/zhaicc/blogresource/css/live2d/waifu.css", rel: "stylesheet", type: "text/css"}).appendTo('head');
         $('body').append(
             '<div class="waifu">' +
                 '<div class="waifu-tips"></div>' +
