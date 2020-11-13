@@ -16,8 +16,8 @@ try {
                 '</div>' +
             '</div>'
         );
-        $.ajax({url: "https://cdn.jsdelivr.net/gh/zhaicc/blogresource/css/font/js/live2d/waifu-tips.js", dataType:"script", cache: true, success: function() {
-            $.ajax({url: "https://cdn.jsdelivr.net/gh/zhaicc/blogresource/css/font/js/live2d/live2d.js", dataType:"script", cache: true, success: function() {
+        $.ajax({url: "https://cdn.jsdelivr.net/gh/zhaicc/blogresource/js/live2d/waifu-tips.js", dataType:"script", cache: true, success: function() {
+            $.ajax({url: "https://cdn.jsdelivr.net/gh/zhaicc/blogresource/js/live2d/live2d.js", dataType:"script", cache: true, success: function() {
                 // 后端接口
                 live2d_settings['modelAPI'] = 'https://live2d.fghrsh.net/api/'; // 自建 API 修改这里
                 live2d_settings['hitokotoAPI'] = 'hitokoto.cn'; // 一言 API，可选 'lwl12.com', 'hitokoto.cn', 'jinrishici.com'(古诗词)
@@ -40,7 +40,7 @@ try {
                 // 其他杂项设置
                 live2d_settings['homePageUrl'] = 'https://www.zccicc.com'; // 主页地址，可选 'auto'(自动), '{URL 网址}'
                 live2d_settings['aboutPageUrl'] = 'https://www.zccicc.com/about/'; // 关于页地址, '{URL 网址}'
-                initModel("https://cdn.jsdelivr.net/gh/zhaicc/blogresource/css/font/js/live2d/waifu-tips.json");
+                initModel("https://cdn.jsdelivr.net/gh/zhaicc/blogresource/js/live2d/waifu-tips.json");
             }});
         }});
     }
