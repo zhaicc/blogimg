@@ -22,7 +22,8 @@
 
     if (typeof moment === 'function') {
         $('.article-meta time').each(function() {
-            $(this).text(moment($(this).attr('datetime')).fromNow());
+            // $(this).text(moment($(this).attr('datetime')).fromNow());
+            $(this).text(moment($(this).attr('datetime')).format('LL')); 
         });
     }
 
